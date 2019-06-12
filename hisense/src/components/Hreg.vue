@@ -8,11 +8,6 @@
         <span   >手机号</span>
         <input type="text"  v-model="newUsername">
         </div>
-         <div class="loginText">
-        <span>图形验证码</span>
-        <input type="text" v-model="newPassword">
-        <!-- <a href="###">1996</a> -->
-        </div>
         <div class="loginText">
         <span>短信验证码</span>
         <input type="text">

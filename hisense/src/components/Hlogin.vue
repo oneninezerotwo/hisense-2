@@ -54,35 +54,13 @@ export default {
             console.log(res.data.data.userPassword);
             console.log(this.userPassword);
             console.log(this.$store.state.userNameTo);
-            /*接口的传值是(-1,该用户不存在),(0,密码错误)，同时还会检测管理员账号的值*/
-            // if (res.data == -1) {
-            //   this.tishi = "该用户不存在";
-            //   this.showTishi = true;
-            // } else if (res.data == 0) {
-            //   this.tishi = "密码输入错误";
-            //   this.showTishi = true;
-            // } else if (res.data == "admin") {
-            //   /*路由跳转this.$router.push*/
-            //   this.$router.push("/main");
-            // } else {
-            //   this.tishi = "登录成功";
-            //   this.showTishi = true;
-            //   setCookie("username", this.username, 1000 * 60);
-            //   setTimeout(
-            //     function() {
-            //       this.$router.push("/home");
-            //     }.bind(this),
-            //     1000
-            //   );
-            // }
+
             if (res.data.data.username === this.userName) {
               if (res.data.data.userpass == this.userPassword) {
-                // setCookie("username", this.userName, 1000 * 60);
-                // this.$cookieStore.setCookie("name", this.userName);
-                // localStorage.setItem（'username','zhangsan'）;
+                //本都存储
                 localStorage.setItem("username", this.userName);
                 this.$store.state.userNameTo = this.userName;
-                this.$router.push("/hmine");
+                this.$router.push("/home");
               } else {
                 alert("密码错误");
               }
