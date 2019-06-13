@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div
+    class="css-1dbjc4n r-13awgt0"
+    style="background-color: rgb(255, 255, 255); padding-top: 44px;"
+  >
+    <Header/>
+    <Menu/>
+    <List/>
   </div>
 </template>
-
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
-@Component({
+import Header from "@/components/Header.vue";
+import Menu from "@/components/Menu.vue";
+import List from "@/components/List.vue";
+import Vue from "vue";
+export default Vue.extend({
   components: {
-    HelloWorld,
+    Header,
+    Menu,
+    List
   },
-})
-export default class Home extends Vue {}
+  created() {
+    this.$store.state.isShowFooter = true;
+  }
+});
 </script>
+
