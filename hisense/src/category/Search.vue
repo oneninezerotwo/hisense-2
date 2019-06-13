@@ -6,7 +6,7 @@
       class="css-1dbjc4n r-18u37iz"
       style="display:flex; align-items: center; background-color: rgb(255, 255, 255); border-bottom-color: rgb(221, 221, 221); justify-content: space-around; padding: 6px 12px; -webkit-box-align: center; -webkit-box-pack: justify;"
     >
-      <div
+      <router-link to="category"
         data-focusable="true"
         tabindex="0"
         class="r-1loqt21 r-6dt33c r-1otgn73 r-1i6wzkk r-lrvibr css-1dbjc4n"
@@ -17,7 +17,7 @@
           class="css-76zvg2 css-bfa6kz"
           style=" align-items: center; color: rgb(38, 38, 38); font-family: iconfont; font-size: 14px; font-style: normal; font-weight: normal; min-height: 18px; min-width: 18px; text-align: center; -webkit-box-align: center;"
         ></div>
-      </div>
+      </router-link>
       <div
         class=" css-1dbjc4n r-13awgt0 r-18u37iz r-6dt33c"
         style="display:flex; align-items: center; background-color: rgb(247, 247, 247); border-radius: 2px; margin-left: 12px; margin-right: 12px; padding-right: 12px; padding-left: 12px; position: relative; transform: translateX(0px); -webkit-box-align: center;"
@@ -176,12 +176,12 @@
                 <div 
                   class="css-1dbjc4n r-150rngu r-18u37iz r-16y2uox r-1wbh5a2 r-lltvgl r-buy8e9 r-1sncvnh"
                 >
-                  <div style="display:flex;" class="css-1dbjc4n r-18u37iz">
+                  <div  class="css-1dbjc4n r-18u37iz" style="height:48px; width:100%;">
                     <div
                       data-focusable="true"
                       tabindex="0"
                       class="css-1dbjc4n r-1loqt21 r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"
-                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center;"
+                      style="  display:flex; align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center;float:left;"
                     >
                       <div
                         dir="auto"
@@ -193,7 +193,7 @@
                       data-focusable="true"
                       tabindex="0"
                       class="css-1dbjc4n r-1loqt21 r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"
-                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center;"
+                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center;float:left;"
                     >
                       <div
                         dir="auto"
@@ -205,7 +205,7 @@
                       data-focusable="true"
                       tabindex="0"
                       class="r-1loqt21 r-6dt33c r-1otgn73 r-1i6wzkk r-lrvibr css-1dbjc4n"
-                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center; transition-duration: 0.25s;"
+                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center; transition-duration: 0.25s;float:left;"
                     >
                       <div
                         dir="auto"
@@ -217,7 +217,7 @@
                       data-focusable="true"
                       tabindex="0"
                       class="r-1loqt21 r-6dt33c r-1otgn73 r-1i6wzkk r-lrvibr css-1dbjc4n"
-                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center; transition-duration: 0.25s;"
+                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center; transition-duration: 0.25s;float:left;"
                     >
                       <div
                         dir="auto"
@@ -229,7 +229,7 @@
                       data-focusable="true"
                       tabindex="0"
                       class="css-1dbjc4n r-1loqt21 r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"
-                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center;"
+                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center;float:left;"
                     >
                       <div
                         dir="auto"
@@ -241,7 +241,7 @@
                       data-focusable="true"
                       tabindex="0"
                       class="css-1dbjc4n r-1loqt21 r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"
-                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center;"
+                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center;float:left;"
                     >
                       <div
                         dir="auto"
@@ -253,7 +253,7 @@
                       data-focusable="true"
                       tabindex="0"
                       class="r-1loqt21 r-6dt33c r-1otgn73 r-1i6wzkk r-lrvibr css-1dbjc4n"
-                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center; transition-duration: 0.25s;"
+                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center; transition-duration: 0.25s;float:left;"
                     >
                       <div
                         dir="auto"
@@ -265,12 +265,12 @@
                       data-focusable="true"
                       tabindex="0"
                       class="css-1dbjc4n r-1loqt21 r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"
-                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center;"
+                      style="align-items: center; background-color: rgb(245, 245, 245); border-radius: 48px; height: 48px; justify-content: center; margin-right: 8px; padding: 8px; width: 48px; -webkit-box-align: center; -webkit-box-pack: center;float:left;"
                     >
                       <div
                         dir="auto"
                         class="css-76zvg2 css-cens5h"
-                        style="-webkit-line-clamp: 2; color: rgb(38, 38, 38); font-size: 12px; font-weight: 400; line-height: 32px; text-align: center;"
+                        style="-webkit-line-clamp: 2; color: rgb(38, 38, 38); font-size: 12px; font-weight: 400; line-height: 12px; text-align: center; margin-top:6px;"
                       >洗衣机</div>
                     </div>
                   </div>
