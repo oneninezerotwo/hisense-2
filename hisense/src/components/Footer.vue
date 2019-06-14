@@ -2,7 +2,7 @@
     <div
       v-if="isShowFooter"
       class="css-1dbjc4n css-1dbjc4n2"
-      style="position: fixed; bottom: 0; left: 0; right:0;  background-color: rgb(255, 255, 255); display:flex; border-top-color: rgba(0, 0, 0, 0.3); border-top-width: 1px; flex-direction: row; height: 50px; justify-content: flex-end; padding-top: 5px; padding-bottom: 5px; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-box-pack: end;"
+      style="z-index:10; position: fixed; bottom: 0; left: 0; right:0;  background-color: rgb(255, 255, 255); display:flex; border-top-color: rgba(0, 0, 0, 0.3); border-top-width: 1px; flex-direction: row; height: 50px; justify-content: flex-end; padding-top: 5px; padding-bottom: 5px; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-box-pack: end;"
     >
       <a
         v-for="(a,index) in tabs"
@@ -40,49 +40,49 @@
     </div>
 </template>
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
 export default Vue.extend({
   data() {
     return {
       tabs: [
         {
-          name: "首页",
-          ifcon: "",
-          url: "home",
-          color: "rgb(0, 166, 170)",
-          background: ""
+          name: '首页',
+          ifcon: '',
+          url: '/',
+          color: 'rgb(0, 166, 170)',
+          background: '',
         },
         {
-          name: "分类",
-          ifcon: "",
-          url: "category",
-          color: "rgb(0, 166, 170)",
-          background: ""
+          name: '分类',
+          ifcon: '',
+          url: 'category',
+          color: 'rgb(0, 166, 170)',
+          background: '',
         },
         {
-          name: "",
-          ifcon: "",
-          url: "flex",
-          color: "rgb(0, 166, 170)",
+          name: '',
+          ifcon: '',
+          url: 'flex',
+          color: 'rgb(0, 166, 170)',
           background:
-            "url(//img.shop.hisense.com/2019/06/10/a88fd698-dfaa-4d85-b198-38c52dfbe04e.png) "
+            'url(//img.shop.hisense.com/2019/06/10/a88fd698-dfaa-4d85-b198-38c52dfbe04e.png) ',
         },
         {
-          name: "购物车",
-          ifcon: "",
-          url: "cart",
-          color: "rgb(0, 166, 170)",
-          background: ""
+          name: '购物车',
+          ifcon: '',
+          url: 'cart',
+          color: 'rgb(0, 166, 170)',
+          background: '',
         },
         {
-          name: "我",
-          ifcon: "",
-          url: "me",
-          color: "rgb(0, 166, 170)",
-          background: ""
-        }
+          name: '我',
+          ifcon: '',
+          url: 'me',
+          color: 'rgb(0, 166, 170)',
+          background: '',
+        },
       ],
-      tab: 0
+      tab: 0,
     };
   },
   methods: {
@@ -92,20 +92,20 @@ export default Vue.extend({
       // 编程式导航，代替了传统的<router-link>
       this.$router.push({
         // path
-        name: this.tabs[index].url
+        name: this.tabs[index].url,
       });
       //   记录位置
       this.tab = index;
       // index 你点击的当前所在位置
       // console.log(index);
-    }
+    },
   },
   computed: {
     // 从仓库获取值
     isShowFooter() {
       return this.$store.state.isShowFooter;
-    }
-  }
+    },
+  },
 });
 </script>
 <style lang="scss" scoped>

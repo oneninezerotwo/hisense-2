@@ -12,9 +12,59 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
-      // children:[
+      children: [
+        {
+          path: 'AirConditioner',
+          name: 'AirConditioner',
+          component: () => import('./views/AirConditioner.vue'),
 
-      // ]
+        },
+        {
+          path: '/',
+          name: '/',
+          component: () => import('./views/Recommend.vue'),
+        },
+        {
+          path: 'SnapUp',
+          name: 'SnapUp',
+          component: () => import('./views/SnapUp.vue'),
+        },
+        {
+          path: 'TvSale',
+          name: 'TvSale',
+          component: () => import('./views/TvSale.vue'),
+        },
+        {
+          path: 'Laser',
+          name: 'Laser',
+          component: () => import('./views/Laser.vue'),
+        },
+        {
+          path: 'Refrigerator',
+          name: 'Refrigerator',
+          component: () => import('./views/Refrigerator.vue'),
+        },
+        {
+          path: 'Washer',
+          name: 'Washer',
+          component: () => import('./views/Washer.vue'),
+        },
+        {
+          path: 'Telephone',
+          name: 'Telephone',
+          component: () => import('./views/Telephone.vue'),
+        },
+        {
+          path: 'Hardware',
+          name: 'Hardware',
+          component: () => import('./views/Hardware.vue'),
+        },
+        {
+          path: 'KitchenBath',
+          name: 'KitchenBath',
+          component: () => import('./views/KitchenBath.vue'),
+        },
+      ],
     },
     // {
     //   path: '/about',
@@ -31,7 +81,7 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/Category.vue'),
-      
+
     },
     {
       path: '/cart',
@@ -64,6 +114,6 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './category/Search.vue'),
-    }
+    },
   ],
 });

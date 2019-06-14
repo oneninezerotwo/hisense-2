@@ -160,7 +160,7 @@
                             </div>
                             <div data-focusable="true"  tabindex="0" class="css-1dbjc4n r-1loqt21 r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr" style="padding-right: 12px; padding-left: 12px;">
                               <div class="css-1dbjc4n" style="display:flex; align-items: center; background-color: rgba(0, 166, 170, 0.1); flex-direction: row; height: 40px; justify-content: center; margin-bottom: 24px; margin-top: 24px; -webkit-box-align: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-box-pack: center;">
-                                <div dir="auto" class="css-76zvg2 css-bfa6kz" style="color: rgb(0, 166, 170); font-size: 14px; font-weight: 300; line-height: 20px; text-align: center;" v-text="b.current.name + '频道'"></div>
+                                <router-link :to="b.carouselItems[0].link" dir="auto" class="css-76zvg2 css-bfa6kz" style="color: rgb(0, 166, 170); font-size: 14px; font-weight: 300; line-height: 20px; text-align: center;" v-text="b.current.name + '频道'"></router-link>
                                 <div dir="auto" class="css-76zvg2 css-bfa6kz" style="align-items: center; color: rgb(0, 166, 170); font-family: iconfont; font-size: 20px; font-style: normal; font-weight: normal; min-height: 20px; min-width: 20px; text-align: center; -webkit-box-align: center;"></div>
                               </div>
                             </div>
@@ -211,7 +211,7 @@ export default {
         ...data.data.serviceData.body_2._DATA_
       ];
       // this.cateList = [...this.cateList, ...data.data.designData.category];
-      // console.log(this.cateList)
+      console.log(this.dataList)
       // console.log(this.dataList[0].carouselItems[0].src);
     },
 
@@ -267,8 +267,9 @@ export default {
     },
     // rightSrcollAddEventListener(){
     //   var _this = this;
-    //   let left_list = document.getElementById("NavList").getElementsByClassName("left-list"),
-    //       right_list = document.getElementsByClassName("right-list");
+    //   let left_list = document.getElementById("NavList").getElementsByClassName("left-list");
+    //   console.log(left_list)
+    //   let right_list = document.getElementsByClassName("right-list");
     //       left_list[0].className = 'left-list active';
     //   window.onscroll = function(){
     //       let window_scrollTop = document.documentElement.scrollTop || document.body.scrollTop;

@@ -7,12 +7,25 @@
   </div>
 </template>
 <script lang="ts">
-import Footer from "@/components/Footer.vue";
-import Vue from "vue";
+import Footer from '@/components/Footer.vue';
+import Vue from 'vue';
 export default Vue.extend({
   components: {
-    Footer
-  }
+    Footer,
+  },
+   mounted() {
+    window.addEventListener('scroll', this.scroll, true);
+  },
+  methods: {
+    scroll() {
+    this.$store.state.isShowHeader = true;
+    this.$store.state.isShowFooter = true;
+    },
+    destroyed() {
+      window.onscroll = null;
+      window.removeEventListener('scroll', this.scroll, false);
+    },
+  },
 });
 </script>
 <style lang="scss">

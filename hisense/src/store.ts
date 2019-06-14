@@ -7,7 +7,8 @@ export default new Vuex.Store({
   state: {
     isShowFooter: true,
     isShowSearch: true,
-    isShowList:true,
+    isShowList: true,
+    isShowHeader:true,
   },
   mutations: {
 
