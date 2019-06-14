@@ -71,7 +71,7 @@
                     >
                       <div
                         v-for="(b,index) in dataList"
-                        :key="index"
+                        :key="index" 
                         @click="toggle(index)"
                         class="left-list"
                         style="display: flex; flex-direction: row; box-sizing: border-box; justify-content: center; align-items: center; height: 50px; background-color: rgb(255, 255, 255);"
@@ -211,7 +211,6 @@ export default {
         ...data.data.serviceData.body_2._DATA_
       ];
       // this.cateList = [...this.cateList, ...data.data.designData.category];
-      // console.log(this.dataList);
       // console.log(this.cateList)
       // console.log(this.dataList[0].carouselItems[0].src);
     },
@@ -268,20 +267,19 @@ export default {
     },
     // rightSrcollAddEventListener(){
     //   var _this = this;
-    //   let left_list = document.getElementById('NavList').getElementsByClassName('left-list');
-    //   // console.log(left_list)
-    //   let right_list = document.getElementsByClassName('right-list');
-    //       // left_list[0].className = 'left-list active';
+    //   let left_list = document.getElementById("NavList").getElementsByClassName("left-list"),
+    //       right_list = document.getElementsByClassName("right-list");
+    //       left_list[0].className = 'left-list active';
     //   window.onscroll = function(){
     //       let window_scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     //       for (let i = 0, len = right_list.length; i < len; i++) {
     //           let right_offsetTop = right_list[i].offsetTop - right_list[0].offsetTop;
               
-    //           // if (window_scrollTop >= right_offsetTop) {
-    //           //     for (let n = 0, len = left_list.length; n < len; n++) {
-    //           //      left_list[n] =  (i === n ? 'active' : '');
-    //           //     }
-    //           // }
+    //           if (window_scrollTop >= right_offsetTop) {
+    //               for (let n = 0, len = left_list.length; n < len; n++) {
+    //                left_list[n].className = "left-list" + (i === n ? "active" : "");
+    //               }
+    //           }
     //       }
     //   };
     // },

@@ -13,12 +13,12 @@
             >
               <div class="am-navbar am-navbar-light">
                 <div class="am-navbar-left" role="button">
-                  <router-link
-                    to="category"
+                  <div
+                    @click="to()"
                     dir="auto"
                     class="css-76zvg2 css-bfa6kz"
                     style="align-items: center; color: rgb(102, 102, 102); font-family: iconfont; font-size: 16px; font-style: normal; font-weight: normal; min-height: 16px; min-width: 16px; text-align: center; -webkit-box-align: center;"
-                  ></router-link>
+                  ></div>
                 </div>
                 <div class="am-navbar-title">618提前抢</div>
                 <div class="am-navbar-right"></div>
@@ -159,6 +159,10 @@ export default {
   created() {
     this.$store.state.isShowFooter = false;
   },
-  
+  methods:{
+    to(){
+      window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
+    }
+  }
 };
 </script>
