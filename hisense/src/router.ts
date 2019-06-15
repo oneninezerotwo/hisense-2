@@ -77,43 +77,49 @@ export default new Router({
     {
       path: '/category',
       name: 'category',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Category.vue'),
+      component: () => import('./views/Category.vue'),
 
     },
     {
       path: '/cart',
       name: 'cart',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Cart.vue'),
+      component: () => import( './views/Cart.vue'),
     },
     {
       path: '/flex',
       name: 'flex',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Flex.vue'),
+      component: () => import( './views/Flex.vue'),
     },
     {
       path: '/me',
       name: 'me',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Me.vue'),
+      component: () => import( './views/Me.vue'),
+      
     },
     {
       path: '/search',
       name: 'search',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './category/Search.vue'),
+      component: () => import( './category/Search.vue'),
+    },
+    {
+      path: '/logReg',
+      name: 'logReg',
+      component: () => import( './category/HlogReg.vue'),
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('./category/Hlogin.vue'),
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: () => import('./category/Hreg.vue'),
+    },
+    {
+      path: '/personal',
+      name: 'personal',
+      component: () => import( './category/Hpersonal.vue'),
     },
   ],
 });

@@ -9,6 +9,7 @@ export default new Vuex.Store({
     isShowSearch: true,
     isShowList: true,
     isShowHeader:true,
+    userNameTo: '',
   },
   mutations: {
 
