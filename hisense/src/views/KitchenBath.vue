@@ -18,11 +18,14 @@
     </div>
     <div class="air_list1">
       <ul>
-        <li v-for="(item,index) in airlist1" :key="index">
+          <li v-for="(item,index) in airlist1" :key="index">
+            <router-link to="about">
           <img :src="item.imgUrl" :alt="item.name">
           <p v-text="item.name"></p>
           <span v-text="'￥'+item.pri"></span>
+          </router-link>
         </li>
+      <router-view></router-view>
       </ul>
     </div>
     <div class="new_pro">

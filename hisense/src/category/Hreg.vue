@@ -29,7 +29,7 @@ export default {
       newPassword: ""
     };
   },
-  create(){
+  created(){
     this.$store.state.isShowFooter = false;
   },
   methods: {
