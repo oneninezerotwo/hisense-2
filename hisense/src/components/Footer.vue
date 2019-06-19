@@ -4,7 +4,7 @@
       class="css-1dbjc4n css-1dbjc4n2"
       style="z-index:10; position: fixed; bottom: 0; left: 0; right:0;  background-color: rgb(255, 255, 255); display:flex; border-top-color: rgba(0, 0, 0, 0.3); border-top-width: 1px; flex-direction: row; height: 50px; justify-content: flex-end; padding-top: 5px; padding-bottom: 5px; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-box-pack: end;"
     >
-      <a
+      <a 
         v-for="(a,index) in tabs"
         :key="index"
         @click="toggle(index)"
@@ -87,17 +87,19 @@ export default Vue.extend({
   },
   methods: {
     toggle(index) {
+    // this.tab=0,
       // console.log(this);
       // router.push(...)
       // 编程式导航，代替了传统的<router-link>
       this.$router.push({
         // path
         name: this.tabs[index].url,
-      });
+      });0
       //   记录位置
-      this.tab = index;
+      this.tab = index; 
+
       // index 你点击的当前所在位置
-      // console.log(index);
+      console.log(index);
     },
   },
   computed: {

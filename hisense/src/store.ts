@@ -10,6 +10,7 @@ export default new Vuex.Store({
     isShowList: true,
     isShowHeader:true,
     userNameTo: '',
+    index:0,
   },
   mutations: {
 

@@ -76,7 +76,7 @@ export default {
     if (name) {
       this.title = name;
     } else {
-      alert("您还没登录哦");
+      // alert("您还没登录哦");
     }
   },
   methods: {
@@ -85,7 +85,7 @@ export default {
       if (localStorage.getItem("username")) {
         this.$router.push("/personal");
       } else {
-        alert("您还没登录");
+        // alert("您还没登录");
       }
     },
     she(){
