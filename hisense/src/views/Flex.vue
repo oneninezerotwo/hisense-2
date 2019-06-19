@@ -156,24 +156,17 @@
 </template>
 <script>
 export default {
-  created() {
-    this.$store.state.isShowFooter = false;
-  },
+  
   mounted() {
     window.addEventListener("scroll", this.scroll, true);
-    // this.initPage();
+    // this.initPage();\
+    this.$store.state.isShowFooter = false;
   },
   methods:{
     to(){
       window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
     },
-    scroll() {
-      this.$store.state.isShowFooter = false;
-    },
-    destroyed() {
-      window.onscroll = null;
-      window.removeEventListener("scroll", this.scroll, false);
-    },
+  
   }
 };
 </script>

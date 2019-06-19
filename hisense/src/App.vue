@@ -19,7 +19,6 @@ export default Vue.extend({
   methods: {
     scroll() {
     this.$store.state.isShowHeader = true;
-    this.$store.state.isShowFooter = true;
     },
     destroyed() {
       window.onscroll = null;
